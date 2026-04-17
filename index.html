@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark - Light Mode Toggle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-name">ThemeStudio</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- TOGGLE BUTTON IN NAVBAR -->
+    <div class="theme-toggle-wrapper">
+      <span class="toggle-label" id="toggle-label">&#127769; Dark Mode</span>
+      <button class="toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+        <span class="toggle-track">
+          <span class="toggle-thumb">
+            <span class="toggle-icon" id="toggleIcon">&#9728;</span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Dark & Light<br /><span class="highlight">Mode Toggle</span></h1>
+      <p class="hero-subtitle">
+        Your theme preference is saved automatically using <strong>Local Storage</strong>.<br />
+        Refresh the page — your choice persists! 
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="alert('Primary button clicked!')">Get Started</button>
+        <button class="btn btn-secondary" onclick="alert('Secondary button clicked!')">Learn More</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-circle circle-1"></div>
+      <div class="visual-circle circle-2"></div>
+      <div class="visual-circle circle-3"></div>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section class="cards-section">
+    <h2 class="section-title">Features</h2>
+    <p class="section-subtitle">Everything works seamlessly in both modes</p>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <h3 class="card-title">CSS Variables</h3>
+        <p class="card-text">
+          All colors are managed via <code>:root</code> CSS variables. Switching themes is instant and consistent across every element.
+        </p>
+        <a href="#" class="card-link">Explore →</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Local Storage</h3>
+        <p class="card-text">
+          Your preferred theme is saved using <code>localStorage.setItem()</code>. On every page load, it is automatically restored.
+        </p>
+        <a href="#" class="card-link">Explore →</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">System Detection</h3>
+        <p class="card-text">
+          No saved preference? The app detects your OS theme using <code>prefers-color-scheme</code> and applies it automatically.
+        </p>
+        <a href="#" class="card-link">Explore →</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Smooth Transitions</h3>
+        <p class="card-text">
+          Every color, background, and border transitions smoothly with CSS <code>transition</code>, making theme switching feel elegant.
+        </p>
+        <a href="#" class="card-link">Explore →</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Fully Responsive</h3>
+        <p class="card-text">
+          The layout adapts beautifully to all screen sizes — mobile, tablet, and desktop — in both light and dark themes.
+        </p>
+        <a href="#" class="card-link">Explore →</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Accessible Design</h3>
+        <p class="card-text">
+          ARIA labels on the toggle button and sufficient color contrast in both modes ensure accessibility for all users.
+        </p>
+        <a href="#" class="card-link">Explore →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Built with &#10084; by Khadija | Dark/Light Mode Toggle | Local Storage Persistence</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
